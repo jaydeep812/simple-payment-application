@@ -1,7 +1,10 @@
 const mongoose = require('mongoose')
 const { number } = require('zod')
+const dotenv = require('dotenv')
 
-mongoose.connect('mongodb+srv://jaydeepthakkar0812:fiqgaeiWSxpAOC0Y@100xdev.mxvt3bt.mongodb.net/paytm')
+dotenv.config({path:'.env'})
+
+mongoose.connect(process.env.MONGO_URI)
 
 const userSchema = new mongoose.Schema({
     username : String,
