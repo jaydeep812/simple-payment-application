@@ -1,2 +1,4 @@
 
-## Build a basic version of PayTM
+## Built a simple payment application
+- To solidify understanding of database transactions
+- 
